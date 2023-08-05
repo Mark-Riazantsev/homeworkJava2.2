@@ -2,18 +2,18 @@ public class Main {
     public static void main(String[] args) {
 
         int balance = 100;
-        int replenishment = 1222;
-        int finalBalance = balance + replenishment;
+        int replenishment = 700;
+        int balanceAfterReplenisment = balance + replenishment;
 
-        System.out.println("Итоговый баланс: " + finalBalance);
 
-        boolean sufficientReplenishmentAmount = true;
-        int percent = sufficientReplenishmentAmount ? 1 : 0;
-        int bonus = finalBalance / 100 * percent;
-        if (finalBalance < 1000) {
+        int percent = 1;
+        int bonus = balanceAfterReplenisment / 100 * percent;
+        if (balanceAfterReplenisment < 1000) {
             bonus = 0;
         }
 
-        System.out.println("Итоговый бонус: " + bonus);
+        System.out.println("Итоговый бонус: " + bonus + " RUB");
+        System.out.println("Итоговый баланс: " + balanceAfterReplenisment + " RUB");
+
     }
 }
